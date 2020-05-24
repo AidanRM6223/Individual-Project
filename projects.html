@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+<link rel="stylesheet" href="styles.css">
+<title>Aidan's Portfolio</title>
+    <style>
+        *{box-sizing:border-box}
+    </style>
+</head>
+<body onload="loadPage()">
+    <div id="loader"></div>
+    <div id="main" style="display: none;" class="animate-bottom">
+        <img src="images/home-title.png" id="home-title">
+        
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Coding Projects</a>
+            <a href="bio-exp.html">Bio & Experiences</a>
+        </div>
+        
+        <div class="main">
+            <br><br>
+            <h2>Projects</h2>
+            <div class="slideshow-container">
+                <div class="slides1 fadeanim">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/game1-1.png" style="width:100%">
+                    <div class="captiontext">Caption Text</div>
+                </div>
+
+                <div class="slides1 fadeanim">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/game1-2.png" style="width:100%">
+                    <div class="captiontext">Caption Text</div>
+                </div>
+
+                <div class="slides1 fadeanim">
+                    <div class="numbertext">3 / 3</div>
+                    <img style="width:100%">
+                    <div class="captiontext">Caption Text</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</body>
+</html>

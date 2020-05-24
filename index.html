@@ -13,21 +13,27 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
 <link rel="stylesheet" href="styles.css">
 <title>Aidan's Portfolio</title>
     
 </head>
-<body>
-    <img src="images/home-title.png" id="home-title">
-    <div class="sidenav">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-    </div>
-    
-    <div class="main">
-        <br><br>
-        <p style="font-size: 25px;">Welcome to my portfolio! Use the links on the right to access my About, Coding Projects, and Experience Timeline pages. I hope you enjoy what you see.</p>
+<body onload="loadPage()">
+    <div id="loader"></div>
+    <div id="main" style="display: none;" class="animate-bottom">
+        <img src="images/home-title.png" id="home-title">
+        
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Coding Projects</a>
+            <a href="bio-exp.html">Bio & Experiences</a>
+        </div>
+        
+        <div class="main">
+            <br><br>
+            <p style="font-size: 25px;">Welcome to my portfolio! Use the links on the right to access my About, Coding Projects, and Experiences pages.</p>
+        </div>
     </div>
 </body>
 </html>
