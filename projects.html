@@ -14,7 +14,20 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Jquery files -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="script.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion({
+                collapsible:true,
+                heightStyle: "content"
+            });
+        })
+    </script>
 <link rel="stylesheet" href="styles.css">
 <title>Aidan's Portfolio - Projects</title>
 </head>
@@ -37,10 +50,9 @@
             <br><br>
             <h1 style="text-align: center;">Projects</h1>
             <br>
-            <!--<button class="accordion">Project 1: Tank N' Blocks</button>
-            <div class="panel">-->
-                <h1>Project 1: Tank N' Blocks</h1>
-                <p>This was a game made at DigiPen's Pre-College Program in 2018. I had help from a team of three other students that were in the same program as me, and our goal was to create a top down shooter. We came up with "Tank N' Blocks," a game where you control a tank to push boxes into their designated slots to advance through the levels. At the same time, you have to use power-ups and the ability to shoot bullets to destroy other tanks.</p>
+            <div id="accordion">
+                <h3>Project 1: Tank N' Blocks</h3>
+                <div>This was a game made at DigiPen's Pre-College Program in 2018. I had help from a team of three other students that were in the same program as me, and our goal was to create a top down shooter. We came up with "Tank N' Blocks," a game where you control a tank to push boxes into their designated slots to advance through the levels. At the same time, you have to use power-ups and the ability to shoot bullets to destroy other tanks.
                 <ul>
                     <li>Language: Zilch</li>
                     <li>Things I learned:</li>
@@ -80,35 +92,56 @@
                     <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                 </div>
-            <!--</div>
-            <button class="accordion">Project 2: Quest for the Balloon</button>
-            <div class="panel">-->
+                <br>
+            </div>    
+            <h3>Project 2: Quest for the Balloon</h3>
+            <div>
                 <p>This project is definitely the biggest game I’ve ever made – my first 2D platformer. The plot is simple: you have to go through levels, gather power-ups to defeat enemies, all in order to get a balloon. Not as interesting as more popular games out there, but I didn't pay much attention to the plotline. I had a lot of fun with this project, as it originally was a prototype for a course I’d taken over the summer, but I built on it to add a couple more levels and more features (the ice level & the Super Turbo power-up).</p>
-            
+                <ul>
+                    <li>Language: Zilch</li>
+                    <li>Things I learned:</li>
+                    <ul>
+                        <li>How to teleport a player to a different position in the level with portals. This part was a bit easy to make, but I had a little trouble with linking pairs together, since there were so many in each level.
+                        </li>
+                        <li>How to use particle effects – This was a small factor in the game. I wanted each aspect of the player’s power-ups to have particles, not just a change of sprites. I thought it looked great!
+                        </li>
+                        <li>How to use key bindings for cheat codes to activate power-ups. I found this easy to navigate through the level faster, because you can just activate the Fire power-up with a press of a key and "blaze" your way through each level. The codes are revealed to the player when they beat the game.
+                        </li>
+                    </ul>
+                    <li>Things I could've done better:</li>
+                    <ul>
+                        <li>Make the background smaller and follow the player everywhere. In the first few levels especially, the mountains were very up close and were blurry. I could’ve made it so that it followed the camera everywhere or some sort of parallax effect.
+                        </li>
+                        <li>More than one player – I wanted to originally make it a multi-player game for 2 players, but I didn’t know how to make it so that the camera focused on both players at the same time – or a viewport for each player.
+                        </li>
+                    </ul>
+                </ul>
                 <div class="slideshow-container">
-                <div class="slides2">
+                <div class="slides2" style="display: block;">
                     <div class="numbertext">1 / 3</div>
                     <img src="images/game2-1.png" style="width:100%">
-                    <div class="captiontext">The title screen of our game.</div>
+                    <div class="captiontext" style="color: black;">The title screen of our game.</div>
                 </div>
                 
                 <div class="slides2">
                     <div class="numbertext">2 / 3</div>
                     <img src="images/game2-2.png" style="width:100%">
-                    <div class="captiontext">The title screen of our game.</div>
+                    <div class="captiontext" style="color: black;">The title screen of our game.</div>
                 </div>
                 
                 <div class="slides2">
                     <div class="numbertext">3 / 3</div>
                     <img src="images/game2-3.png" style="width:100%">
-                    <div class="captiontext">The title screen of our game.</div>
+                    <div class="captiontext" style="color: black;">The title screen of our game.</div>
                 </div>
                 
                 <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                </div>   
-            <!--</div>-->
+            </div>
         </div>
-    </div>
+        </div>
+        </div>
+        </div>
+
 </body>
 </html>

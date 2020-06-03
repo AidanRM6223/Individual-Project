@@ -156,7 +156,7 @@ body {
   outline: none;
   transition: 0.4s;
 }
-.accordion-active, .accordion:hover {
+.acc-active, .accordion:hover {
   background-color: #ccc;
 }
 
