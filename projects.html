@@ -15,8 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Jquery files -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="script.js"></script>
@@ -24,7 +23,8 @@
         $(function() {
             $("#accordion").accordion({
                 collapsible:true,
-                heightStyle: "content"
+                heightStyle: "content",
+                icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
             });
         })
     </script>
@@ -52,46 +52,47 @@
             <br>
             <div id="accordion">
                 <h3>Project 1: Tank N' Blocks</h3>
-                <div>This was a game made at DigiPen's Pre-College Program in 2018. I had help from a team of three other students that were in the same program as me, and our goal was to create a top down shooter. We came up with "Tank N' Blocks," a game where you control a tank to push boxes into their designated slots to advance through the levels. At the same time, you have to use power-ups and the ability to shoot bullets to destroy other tanks.
-                <ul>
-                    <li>Language: Zilch</li>
-                    <li>Things I learned:</li>
+                <div class=".accordion-content">
+                    <p>This was a game made at DigiPen's Pre-College Program in 2018. I had help from a team of three other students that were in the same program as me, and our goal was to create a top down shooter. We came up with "Tank N' Blocks," a game where you control a tank to push boxes into their designated slots to advance through the levels. At the same time, you have to use power-ups and the ability to shoot bullets to destroy other tanks.</p>
                     <ul>
-                        <li>It was my first time working with a team to make a video game</li>
-                        <li>How to make a good game in a small amount of time</li>
+                        <li>Language: Zilch</li>
+                        <li>Things I learned:</li>
+                        <ul>
+                            <li>It was my first time working with a team to make a video game</li>
+                            <li>How to make a good game in a small amount of time</li>
+                        </ul>
+                        <li>Things we could've done better:</li>
+                        <ul>
+                            <li>Well, if we had an actual artist on our team (and not just a designer), I think our game would’ve been a lot better. We used pixel art made by Kean (a lot of work on his end).</li>
+                            <li>We could’ve polished up our code a bit, since most of our game was hard-coded. Up until that point, I never hard-coded my games, but I understood it eventually.</li>
+                        </ul>
                     </ul>
-                    <li>Things we could've done better:</li>
-                    <ul>
-                        <li>Well, if we had an actual artist on our team (and not just a designer), I think our game would’ve been a lot better. We used pixel art made by Kean (a lot of work on his end).</li>
-                        <li>We could’ve polished up our code a bit, since most of our game was hard-coded. Up until that point, I never hard-coded my games, but I understood it eventually.</li>
-                    </ul>
-                </ul>
-                <div class="slideshow-container">
-                    <div class="slides1" style="display: block;">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="images/game1-1.png" style="width:100%">
-                        <div class="captiontext">The title screen of our game.</div>
+                    <div class="slideshow-container">
+                        <div class="slides1" style="display: block;">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="images/game1-1.png" style="width:100%">
+                            <div class="captiontext">The title screen of our game.</div>
+                        </div>
+                    
+                        <div class="slides1">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="images/game1-2.png" style="width:100%">
+                            <div class="captiontext">Starting Level 1 - Adaptation!</div>
+                        </div>
+                    
+                        <div class="slides1">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="images/game1-3.png" style="width:100%">
+                            <div class="captiontext">The hardest level of the game needed an invincibility power-up just to get past the first part.</div>
+                        </div>
+                        <div class="slides1">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="images/game1-4.png" style="width:100%">
+                            <div class="captiontext">Nearly finished - the end of the final level!</div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                     </div>
-                  
-                    <div class="slides1">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="images/game1-2.png" style="width:100%">
-                        <div class="captiontext">Starting Level 1 - Adaptation!</div>
-                    </div>
-                  
-                    <div class="slides1">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="images/game1-3.png" style="width:100%">
-                        <div class="captiontext">The hardest level of the game needed an invincibility power-up just to get past the first part.</div>
-                    </div>
-                    <div class="slides1">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="images/game1-4.png" style="width:100%">
-                        <div class="captiontext">Nearly finished - the end of the final level!</div>
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                </div>
                 <br>
             </div>    
             <h3>Project 2: Quest for the Balloon</h3>
