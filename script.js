@@ -1,6 +1,6 @@
 var loadTime;
 function loadPage() {
-  loadTime = setTimeout(showPage, 2000);
+  loadTime = setTimeout(showPage, 1000);
 }
 function showPage() {
   document.getElementById("loader").style.display = "none";
