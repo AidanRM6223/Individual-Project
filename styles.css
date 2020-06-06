@@ -160,7 +160,7 @@ body{
   }
   
   /* Hide the images by default */
-  .slides1, .slides2 {
+  .slides1, .slides2, .slides3 {
     display: none;
   }
   
