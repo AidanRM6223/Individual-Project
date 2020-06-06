@@ -29,10 +29,6 @@
         })
     </script>
     <style>
-        #accordion {
-            padding-left: 150px;
-            padding-right: 150px;
-        }
     </style>
 <link rel="stylesheet" href="styles.css">
 <title>Aidan's Portfolio - Projects</title>
@@ -43,7 +39,9 @@
         <a href="index.html"><img src="images/home-title.png" id="home-title"></a>
         
         <div class="topnav" id="topnav">
+            <a href="index.html"><img src="images/home-title.png" id="home-title-topnav"></a>
             <a href="projects.html">Coding Projects</a>
+            <a href="index.html">Home</a>
             <a href="bio-exp.html">Bio and Experiences</a>
             <a href="javascript:void(0);" class="icon" onclick="topNav()"><i class="fa fa-bars"></i></a>
         </div>
@@ -58,7 +56,7 @@
             <h1 style="text-align: center;">Projects</h1>
             <br>
             <div id="accordion">
-                <h3>Project 1: Tank N' Blocks</h3>
+                <h2>Project 1: Tank N' Blocks</h2>
                 <div>
                     <p>This was a game made at DigiPen's Pre-College Program in 2018. I had help from a team of three other students that were in the same program as me, and our goal was to create a top down shooter. We came up with "Tank N' Blocks," a game where you control a tank to push boxes into their designated slots to advance through the levels. At the same time, you have to use power-ups and the ability to shoot bullets to destroy other tanks.</p>
                     <ul>
@@ -100,54 +98,53 @@
                         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                     </div>
-                <br>
                 </div>    
-                <h3>Project 2: Quest for the Balloon</h3>
+                <h2>Project 2: Quest for the Balloon</h2>
                 <div>
-                <p>This project is definitely the biggest game I’ve ever made – my first 2D platformer. The plot is simple: you have to go through levels, gather power-ups to defeat enemies, all in order to get a balloon. Not as interesting as more popular games out there, but I didn't pay much attention to the plotline. I had a lot of fun with this project, as it originally was a prototype for a course I’d taken over the summer, but I built on it to add a couple more levels and more features (the ice level & the Super Turbo power-up).</p>
-                <ul>
-                    <li>Language: Zilch</li>
-                    <li>Things I learned:</li>
+                    <p>This project is definitely the biggest game I’ve ever made – my first 2D platformer. The plot is simple: you have to go through levels, gather power-ups to defeat enemies, all in order to get a balloon. Not as interesting as more popular games out there, but I didn't pay much attention to the plotline. I had a lot of fun with this project, as it originally was a prototype for a course I’d taken over the summer, but I built on it to add a couple more levels and more features (the ice level & the Super Turbo power-up).</p>
                     <ul>
-                        <li>How to teleport a player to a different position in the level with portals. This part was a bit easy to make, but I had a little trouble with linking pairs together, since there were so many in each level.
-                        </li>
-                        <li>How to use particle effects – This was a small factor in the game. I wanted each aspect of the player’s power-ups to have particles, not just a change of sprites. I thought it looked great!
-                        </li>
-                        <li>How to use key bindings for cheat codes to activate power-ups. I found this easy to navigate through the level faster, because you can just activate the Fire power-up with a press of a key and "blaze" your way through each level. The codes are revealed to the player when they beat the game.
-                        </li>
+                        <li>Language: Zilch</li>
+                        <li>Things I learned:</li>
+                        <ul>
+                            <li>How to teleport a player to a different position in the level with portals. This part was a bit easy to make, but I had a little trouble with linking pairs together, since there were so many in each level.
+                            </li>
+                            <li>How to use particle effects – This was a small factor in the game. I wanted each aspect of the player’s power-ups to have particles, not just a change of sprites. I thought it looked great!
+                            </li>
+                            <li>How to use key bindings for cheat codes to activate power-ups. I found this easy to navigate through the level faster, because you can just activate the Fire power-up with a press of a key and "blaze" your way through each level. The codes are revealed to the player when they beat the game.
+                            </li>
+                        </ul>
+                        <li>Things I could've done better:</li>
+                        <ul>
+                            <li>Make the background smaller and follow the player everywhere. In the first few levels especially, the mountains were very up close and were blurry. I could’ve made it so that it followed the camera everywhere or some sort of parallax effect.
+                            </li>
+                            <li>More than one player – I wanted to originally make it a multi-player game for 2 players, but I didn’t know how to make it so that the camera focused on both players at the same time – or a viewport for each player.
+                            </li>
+                        </ul>
                     </ul>
-                    <li>Things I could've done better:</li>
-                    <ul>
-                        <li>Make the background smaller and follow the player everywhere. In the first few levels especially, the mountains were very up close and were blurry. I could’ve made it so that it followed the camera everywhere or some sort of parallax effect.
-                        </li>
-                        <li>More than one player – I wanted to originally make it a multi-player game for 2 players, but I didn’t know how to make it so that the camera focused on both players at the same time – or a viewport for each player.
-                        </li>
-                    </ul>
-                </ul>
-                <div class="slideshow-container">
-                <div class="slides2" style="display: block;">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="images/game2-1.png" style="width:100%">
-                    <div class="captiontext" style="color: black;">The start screen of QFTB!</div>
+                    <div class="slideshow-container">
+                        <div class="slides2" style="display: block;">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/game2-1.png" style="width:100%">
+                            <div class="captiontext" style="color: black;">The start screen of QFTB!</div>
+                        </div>
+                        
+                        <div class="slides2">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="images/game2-2.png" style="width:100%">
+                            <div class="captiontext" style="color: black;">Getting the balloon and finishing the game.</div>
+                        </div>
+                        
+                        <div class="slides2">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="images/game2-3.png" style="width:100%">
+                            <div class="captiontext" style="color: black;">The fun part - cheat codes!!</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>
                 </div>
-                
-                <div class="slides2">
-                    <div class="numbertext">2 / 3</div>
-                    <img src="images/game2-2.png" style="width:100%">
-                    <div class="captiontext" style="color: black;">Getting the balloon and finishing the game.</div>
-                </div>
-                
-                <div class="slides2">
-                    <div class="numbertext">3 / 3</div>
-                    <img src="images/game2-3.png" style="width:100%">
-                    <div class="captiontext" style="color: black;">The fun part - cheat codes!!</div>
-                </div>
-                
-                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-            </div>
-                </div>
-                <h3>Project 3: Top Down shooter</h3>
+                <h2>Project 3: Top Down Shooter</h2>
                 <div>
                     <p>With more controls and abilities, I think of this as a revamped "Starship Battlefield," a game I made a couple years back. I used the exact same graphics (though a different colored player ship), but the enemies have different functionalities: In the video to the right, the red alien just patrols up and down, the purple ship flies in random directions inside of arena, and the dark blue ship tries to ram into you and shower you with bullets.
                     </p>
@@ -172,27 +169,170 @@
                         <div class="slides3" style="display: block;">
                             <div class="numbertext">1 / 3</div>
                             <img src="images/game3-1.png" style="width:100%">
-                            <div class="captiontext" style="color: black;">The title screen of our game.</div>
+                            <div class="captiontext" style="color: black;">Spreading bullets - a special attack if you can do it right.
+                            </div>
                         </div>
                         
                         <div class="slides3">
                             <div class="numbertext">2 / 3</div>
                             <img src="images/game3-2.png" style="width:100%">
-                            <div class="captiontext" style="color: black;">The title screen of our game.</div>
+                            <div class="captiontext" style="color: black;">Cornered by enemy ships!
+                            </div>
                         </div>
                         
                         <div class="slides3">
                             <div class="numbertext">3 / 3</div>
                             <img src="images/game3-3.png" style="width:100%">
-                            <div class="captiontext" style="color: black;">The title screen of our game.</div>
+                            <div class="captiontext" style="color: black;">Activating the invincibility cheat code!
+                            </div>
                         </div>
                         
                         <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                    </div>
+                </div>
+                <h2>Project 4: Rube Goldberg Machine</h2>
+                <div>
+                    <p>This isn’t much of a game more than it is a simulation. I made this with DigiPen’s Zero Engine, given to me in a course I took with them in the summer. This was the first assignment I did for that class, and in turn the first thing I’ve ever made with Zero Engine.
+                    </p>
+                    <ul>
+                        <li>Language: Zilch</li>
+                        <li> Things I learned:</li>
+                        <ul>
+                            <li>How to place sprites in the game area and to give the physical properties (bounciness, slipperiness, etc.)
+                            </li>
+                            <li>How to create a digital Rube Goldberg machine!
+                            </li>
+                        </ul>
+                        <li>Things I could've done better</li>
+                        <ul>
+                            <li>The sprites were a bit bland in the simulation. They were plain colors – red, green, blue, etc.), whereas I could’ve made my own sprites to make things a bit more interesting in terms of visuals and graphics.
+                            </li>
+                            <li>Add camera functionality – I could only fit so much in the game area that the camera could view without moving it, so it was hard not to go out of bounds. I could’ve added a script that allowed the camera to move slowly left or right depending on where the active ball(s) are.
+                            </li>
+                        </ul>
+                        <div class="slideshow-container">
+                            <div class="slides4" style="display: block;">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="images/game4-1.png" style="width:100%">
+                                <div class="captiontext" style="color: white;">Starting the machine
+                                </div>
+                            </div>
+                            
+                            <div class="slides4">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="images/game4-2.png" style="width:100%">
+                                <div class="captiontext" style="color: white;">Nearly there - all but one ball to go in it's slot!
+                                </div>
+                            </div>
+                            
+                            <div class="slides4">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="images/game4-3.png" style="width:100%">
+                                <div class="captiontext" style="color: white;">The machine has finished!
+                                </div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                        </div>
+                    </ul>
+                </div>
+                <h2>Project 5: Starship Battlefield</h2>
+                <div>
+                    <p>This was the first video game that I’ve ever made  This game is a simple top-down shooter in space, where you’re trying to survive as long as possible while shooting at oncoming aliens. There were two power-ups that I wanted to implement into the game, but I couldn’t get the results I wanted with it – so I just added a life item that acts as a continue if you lose all your remaining lives.
+                    </p>
+                    <ul>
+                        <li>Language: Quick Basic</li>
+                        <li>Things I learned:</li>
+                        <ul>
+                            <li>How to detect collision between different objects in the game
+                            </li>
+                            <li>How to make (mostly working) items
+                            </li>
+                            <li>How to include a score and life system into a game
+                            </li>
+                            <li>How to use QB64 (Quick Basic) to make my first video game!
+                            </li>
+                        </ul>
+                        <li>Things I could've done better:</li>
+                        <ul>
+                            <li>Added more power-ups and difficulties - The two power ups I wanted to originally add were a shield power-up and a double-barrel gun power-up. If I had figured out how to make those work, then I think it would’ve made the game more fun. I also could’ve added difficulties – easy, medium, and hard… Maybe I could've made the aliens go faster depending on the difficulty.
+                            </li>
+                            <li>Different levels - Right now, it’s only a space level. What if there was a battle with Mars or some other planet in the background – or on the planet itself? I would’ve needed to add a point where the game actually ends a level, because right now you play until you run out of lives.
+                            </li>
+                        </ul>
+                    </ul>
+                    <div class="slideshow-container">
+                        <div class="slides5" style="display: block;">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/game5-1.png" style="width:100%">
+                            <div class="captiontext" style="color: white;">Getting hit by an alien</div>
+                        </div>
+                        
+                        <div class="slides5">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="images/game5-2.png" style="width:100%">
+                            <div class="captiontext" style="color: white;">Making progress - nearly at 5000 points!</div>
+                        </div>
+                        
+                        <div class="slides5">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="images/game5-3.png" style="width:100%">
+                            <div class="captiontext" style="color: white;">Some of the code used to make this game</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                    </div>
+                </div>
+                <h2>Project 6: HangDevil</h2>
+                <div>
+                    <p>This project was slightly more fun than my Turtle Sketch program, but extremely hard (and long) to make. I had no knowledge of using loops in C++, so the whole program was basically just conditional statements. This program is a variation of the classic game “Hangman,” with a slight twist. Instead of a man, however, it’s a devil – I thought it’d be fun to add horns when the player lost and say that “the devil has risen”.
+                    </p>
+                    <ul>
+                        <li>Language: C++</li>
+                        <li>Things I learned:</li>
+                        <ul>
+                            <li>How to use if - else if - else statements in C++
+                            </li>
+                            <li>How to use functions in C++ to display the “correct” message or the “wrong” message
+                            </li>
+                        </ul>
+                        <li>Thing I could’ve done better:
+                        </li>
+                        <ul>
+                            <li>Use loops - the code was over 800 lines long, and only contained if-else statements. I could've made it extremely shorter by using some sort of loops.</li>
+                            <li>Make the player guess different words each time they win a round. Right now, it’s only one word: HANGMAN. If you play it multiple times, you’ll get it right every time, eventually. I could’ve added a list of words that the computer chooses from for the player to guess each round – that would’ve made it more fun.
+                            </li>
+                            <li>Have it so that the player can guess the letters in any order – you can only guess in order (i.e. H, A, N, G, M, A, N). If you guess “A” when you first start the game, it says you’re incorrect, when the actual hangman game would say that “You guessed: _ A _ _ _ A _.”
+                            </li>
+                        </ul>
+                    </ul>
+                    <div class="slideshow-container">
+                        <div class="slides6" style="display: block;">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/game6-1.png" style="width:100%">
+                            <div class="captiontext" style="color: white;">Photo of the game in action</div>
+                        </div>
+                        
+                        <div class="slides6">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="images/game6-2.png" style="width:100%">
+                            <div class="captiontext" style="color: white;">Losing the game</div>
+                        </div>
+                        
+                        <div class="slides6">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="images/game6-3.png" style="width:100%">
+                            <div class="captiontext" style="color: white;">A mere portion of the code used to make the program</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 </html>

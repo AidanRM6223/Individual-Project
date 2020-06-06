@@ -49,12 +49,20 @@
     100% { transform: rotate(360deg); }
   }
 @font-face {
-    src: url("fonts/kimberle.ttf");
+    src: url("fonts/yoster.ttf");
     font-family: body-font;
 }
 @font-face {
-  src: url("fonts/true-crimes.ttf");
+  src: url("fonts/kongtext.ttf");
   font-family: link-font;
+}
+@font-face {
+  src: url("fonts/yoster.ttf");
+  font-family: heading-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: heading-font;
 }
 body {
     background-color: #2196F3;
@@ -74,10 +82,15 @@ body{
     margin-right: auto;
     display: block;
 }
+#home-title-topnav {
+  width: 40%;
+  display: none;
+
+}
 .main
 {
     margin-left: 140px;
-    padding: 0px 10px;
+    padding: 0px 70px;
 }
 .topnav {
   display: none;
@@ -104,11 +117,12 @@ body{
   display: none;
 }
 .sidenav {
-    width: 130px;
+    width: 190px;
     position: fixed;
     z-index: 1;
     top: 50px;
     left: 10px;
+    font-size: 5px;
     background: #1565C0;
     overflow-x: hidden;
     padding: 8px 0;
@@ -123,8 +137,18 @@ body{
 .sidenav a:hover {
     color: #00C853;
 }
+.jumbotron a {
+  color: #40C4FF;
+}
+.jumbotron a:hover {
+  color: #00B0FF;
+}
+#accordion {
+  padding-left: 150px;
+  padding-right: 150px;
+}
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
   .sidenav {
     display: none;
   }
@@ -132,6 +156,12 @@ body{
     margin-left: 0px;
   }
   .topnav {
+    display: block;
+  }
+  #home-title {
+    display: none;
+  }
+  #home-title-topnav {
     display: block;
   }
   .topnav a:not(:first-child) {display: none;}
@@ -150,6 +180,10 @@ body{
     display: block;
     text-align: left;
   }
+  #accordion {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 
@@ -159,69 +193,69 @@ body{
     margin: auto;
   }
   
-  /* Hide the images by default */
-  .slides1, .slides2, .slides3 {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: gray;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgb(175, 175, 175);
-  }
-  
-  .captiontext {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  /* Fading animation */
-  .fadeanim {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+/* Hide the images by default */
+.slides1, .slides2, .slides3, .slides4, .slides5, .slides6, .slides7 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: gray;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+.captiontext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Fading animation */
+.fadeanim {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
