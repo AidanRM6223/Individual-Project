@@ -7,12 +7,15 @@ function showPage() {
   document.getElementById("main").style.display = "block";
 }
 
-var slideIndex = [1,1]; 
-var slideId = ["slides1", "slides2", "slides3"]
+// slideshow stuff
+// Add comments to this file describing what each line does if you can.
+var slideIndex = [1,1,1]; 
+var slideId = ["slides1", "slides2", "slides3"];
 showSlides(1, 0);
 showSlides(1, 1);
-showSlides(1,2);
+showSlides(1, 2);
 function plusSlides(n, no) {
+// You should rename your variables similar to this: function plusSlides(whichSlide, whichSlideShow) {
   showSlides(slideIndex[no] += n, no);
 }
 
@@ -27,6 +30,7 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 
+// navstuff
 function topNav() {
   var x = document.getElementById("topnav");
   if (x.className === "topnav") {
