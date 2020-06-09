@@ -56,14 +56,7 @@
   src: url("fonts/kongtext.ttf");
   font-family: link-font;
 }
-@font-face {
-  src: url("fonts/yoster.ttf");
-  font-family: heading-font;
-}
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: heading-font;
-}
 body {
     background-color: #2196F3;
     background: 	linear-gradient(-135deg, rgb(0, 89, 161) 10%, transparent),
@@ -77,13 +70,13 @@ body{
   color: white;
 }
 #home-title {
-    width: 50%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 #home-title-topnav {
-  width: 40%;
+  width: 300px;
   display: none;
 
 }
@@ -115,6 +108,9 @@ body{
 }
 .topnav .icon {
   display: none;
+}
+.topnav img {
+  display: inline;
 }
 .sidenav {
     width: 190px;
@@ -171,7 +167,6 @@ body{
   }
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
-    position: absolute;
     right: 0;
     top: 0;
   }
