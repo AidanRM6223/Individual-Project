@@ -30,18 +30,38 @@
     <div id="loader"></div>
     <div id="main" style="display: none;" class="animate-bottom">
         <a href="index.html"><img src="images/home-title.png" id="home-title"></a>
-        <div class="topnav fixed-top" id="topnav">
+        
+        <nav class="navbar topnav fixed-top">
+            <!-- Brand -->
             <table style="width:100%">
-                <tr>
-                    <td><a href="#"><img src="images/home-title.png" id="home-title-topnav"></a></td>
-                    <td><a href="javascript:void(0);" class="icon" onclick="topNav()"><i class="fa fa-bars"></i></a></td>
-                </tr>
+            <tr>
+                <td><a class="navbar-brand" href="#"><img src="images/home-title.png" id="home-title-topnav"></a></td>
+                <td><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon text-white " style="float: right;"><i class="fa fa-bars" style="margin-top:5px;"></i></span>
+                </button></td>
+            </tr>
             </table>
-            <a href="projects.html">Coding Projects</a>
-            <a href="index.html">Home</a>
-            <a href="bio-exp.html">Bio and Experiences</a>
             
-        </div>
+
+            <!-- Toggler/collapsibe Button -->
+            
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio-exp.html">Bio and Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Coding Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="sidenav">
             <a href="index.html">Home</a>
             <a href="projects.html">Coding Projects</a>

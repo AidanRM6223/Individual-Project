@@ -36,11 +36,11 @@ function showSlides(whichSlide, whichSlideShow) {
 }
 
 // This function shows the top navigation bar when the window is a specific size (defined in the CSS file)
-function topNav() {
+/*function topNav() {
   var x = document.getElementById("topnav"); // Getting the topnav
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
   }
-}
+}*/
