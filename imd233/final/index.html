@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+  <!--To do:
+        Include:
+        -   navbar, grids, flexboxes, and other effects
+    -->
+<html>
+    <head>
+        <title>Team 7's Webpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css files/stylesheet.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <script src="javascript files/script.js"></script>
+        <style>
+            body{
+                background-color: lightblue;
+            }
+            #aidanImage1 {
+                border-radius: 50%;
+            }
+            #aidanImage2 {
+                border-radius: 20px;
+            }
+
+            .dhruvs-section ul {
+                list-style-type: none;
+                 margin: 0;
+                 padding: 0;
+                overflow: hidden;
+                                    ;
+            }
+
+            .dhruvs-section li a {
+                display: block;
+                 color: white;
+                 text-align: center;
+                 padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dhruvs-section li a:hover {
+                background-color: #111;
+            }
+            
+        </style>
+    </head>
+    <body onload="loadPage()">
+        
+        <img src="images/titleimage.png" style="display: block;
+        margin-left: auto;
+        margin-right: auto; width:75%;">
+        <!--The Nav Bar-->
+        <div id="loader" style="align-self: center; display: block; margin: auto;" class="spinner-border text-success"></div>
+        <div id="main" style="display: none;">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#aidans-section">Section 1</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#dhruvs-section">Section 2</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#connors-section">Section 3</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div style="text-align: center;" class="homepage tab-pane container active" id="home">
+                    <h2 style="font-family: customFont2;">Welcome to our class webpage!</h2>
+                    <ul class="nav nav-pills justify-content-center">
+                        <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#news">News</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#about">About</a></li>
+                    </ul>
+                    <p>The following are examples of Grids in Bootstrap:</p>
+                    <div class="table-striped row homepage-grid">
+                        <div class="col fa-border">1</div>
+                        <div class="col fa-border">2</div>
+                        <div class="col fa-border">3</div>
+                        <div class="col fa-border">4</div>
+                    </div>
+                    <div class="table-striped row homepage-grid">
+                        <div class="col fa-border">1</div>
+                        <div class="col fa-border">2</div>
+                        <div class="col fa-border">3</div>
+                    </div>
+                    <div class="table-striped row homepage-grid">
+                        <div class="col fa-border">1</div>
+                        <div class="col fa-border">2</div>
+                    </div>
+                    <div class="table-striped row homepage-grid">
+                        <div class="col fa-border">1</div>
+                    </div>
+                </div>
+    
+                <div class="aidans-section tab-pane container fade" id="aidans-section">
+                    <div class="jumbotron" style="background-color: #0077B5;">
+                        <h2><a href="https://www.w3schools.com/bootstrap4/default.asp">Bootstrap Tutorial</a></h2>
+                        <p>A lot of this page was created with Bootstrap - click above for a tutorial on it!</p>
+                      </div>
+                    <p style="font-family: customFont1;">Hello. Welcome to our website!</p>
+                    <p style="font-family: customFont1;">This is a <strong>paragraph!</strong> </p>
+                    <img id="aidanImage1" src="images/Aidan's Picture.jpg" alt="Aidan" style="width:22.5%">
+                    
+                    <img id="aidanImage2" src="images/Sonic Movie Meme.jpg" alt="Uh...Meow?" style="width:22.5%;">       
+                    <table class="aidans-table">
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <td>Aidan</td>
+                            
+                            <td>Marshall</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                    </table>
+                    <strong>Aidan's Favorite Video Games:</strong>
+                        <ul>
+                            <li>Final Fantasy III</li>    
+                            <li>Super Smash Bros. <em>Ultimate</em></li>
+                            <li style="color: blue;">Sonic the Hedgehog</li>
+                            
+                        </ul>
+                    <strong>His favorite STH Zone themes:</strong>
+                        <ol>
+                            <li>Flying Battery Zone (Sonic Mania ver.)</li>
+                            <li>Stardust Speedway Bad Future (JP)</li>
+                            <ul>- I even made my own remix of it!<br><audio controls><source src="Aidan's Remix.mp3" type="audio/mpeg"><p>AUDIO NOT SUPPORTED</p></audio></ul>
+                            <li>Chemical Plant Zone</li>
+                        </ol>
+                    <strong>His favorite TV shows:</strong>
+                        <ol>
+                            <li>Beastars <i class="fab fa-wolf-pack-battalion" style="font-size: 36px;"></i></li>
+                            <li>The Flash <i class="fa fa-bolt" style="font-size: 24px;"></i></li>
+                            <li>Marvel's Runaways</li>
+                            <li><i class="fab fa-jedi-order" style="font-size: 24px;"></i> Star Wars: The Clone Wars <i class="fab fa-jedi-order" style="font-size: 24px;"></i></li>
+                        </ol>
+                </div>
+                
+                <!--Dhruv's Section-->
+                <div class="dhruvs-section grad1 tab-pane container fade" id="dhruvs-section"> 
+                    <h1>hello welcome to Dhruv's section</h1>
+                    <h2>part 2</h2>
+                    <div class="dropdown">
+                        <button onclick="showDropdown()" class="dropbtn">dropdown</button>
+                        <div id="dhruvs-Dropdown" class="dhruv-dropcontent">
+                            <a href="#dhruv-ol">Link 1</a>
+                            <a href="#dhruv-ol2">Link 2</a>
+                            <a href="#dhruv-ul">Link 3</a>
+                        </div>
+                    </div>
+                    <p>I am very much happy to type in this paragraph. Writing and critical reading is my favorite subject. I love to write about topics such as sports, technology, and cuture.</p>
+                    <div>
+                        <img src="images/dhruvvermaa_20191117_5.png" alt="temple view" width="500" height="600">
+                    </div>
+                    <br> 
+                    <h2>Topics</h2>
+                    
+                    
+                    <ol id="dhruv-ol"> 
+                        <li >computer</li>
+                        <li>phone</li>
+                        <li>game</li>
+                    </ol>
+            
+                    <ol id="dhruv-ol2">
+                        <li>name</li>
+                        <li>number</li>
+                    </ol>  
+                    <ol>
+                        <li>sports</li>
+                        <li>technology</li>
+                        <li>culture</li>
+                    </ol>   
+                    <ul id="dhruv-ul"> 
+                        <li >water</li>
+                        <li>fire</li>
+                        <li>ice</li>
+                    </ul> 
+                
+                </div>
+                <div class="tab-pane container fade" id="connors-section">
+                    <!--Connor's Section-->
+                    <ul class="nav nav-tabs justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#Chome">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#sec1">P1</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#sec2">P2</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#sec3">P3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+    
+                    <div class="homepage tab-pane container active" id="Chome">
+                        
+                        <p>Please enter in a number to compare : <input type="number" id="NUM1" value="0"></p>
+                        <p>Please enter in a number to compare : <input type="number" id="NUM2" value="0"></p>
+    
+                        <p id="NUMSIZE">Result will be here</p>
+    
+                        <button onclick="larger()">Compare</button>
+    
+                        <p>Please enter in a number to add : <input type="number" id="NUM3" value="0"></p>
+                        <p>Please enter in a number to add : <input type="number" id="NUM4" value="0"></p>
+    
+                        <p id="NUMADD">Result will be here</p>
+    
+                        <button onclick="combine()">Add</button>
+    
+                        <p>Please enter in a number for loop scale : <input type="number" id="NUM5" value="0"></p>
+    
+                        <p id="LOOPRESULT">Result will be here</p>
+    
+                        <button onclick="spinnn()">Cycle</button>
+                    </div>
+                    <div class="tab-pane container fade" id="sec1">
+                        <h1 style="text-align: right;">The beginning of another section</h1>
+                        <h5>but not the last section</h5>
+                    
+                    <div class="backtemp">
+                        <p>This would be <strong>very important text</strong></p>
+                        <p>This is <small>smol text</small></p>
+                        <p>This is different <span style="color: blueviolet;">text</span></p>
+                        <p>This is <em>important text</em></p>
+                    </div>
+                    <div class="backtemp">
+                        <table style="width:50%">
+                            <tr id="change1">
+                                <th>Table 1, Coordinates</th>
+                            <td>64.699105</td>
+                            <td>-18.335279</td>
+                            </tr>
+                            <tr>
+                                <th>Table 2, Games</th>
+                            <td>Terraria</td>
+                            <td>Stardew Valley</td>
+                            </tr>
+                            <tr id="change1">
+                                <th>Table 3, Interesting Facts</th>
+                            <td>Peacocks can increase their height of flight even if it is more of a glide</td>
+                            <td>Minecraft now has a texture pack so realistic it looks like a photo</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="backtemp">
+                        <ul>
+                            <li>A</li>
+                            <li>Unordered List</li>
+                            <li>Looks like this</li>
+                        </ul>
+                        <ol>
+                            <li>A</li>
+                            <li>Ordered List</li>
+                            <li>Looks like this</li>
+                        </ol>
+                    </div>
+                    <div class="backtemp">
+                        <img src="images/rotateBanana.gif" alt="BananaRotate" class="imageRotate">
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="sec2">
+                    <div class="d-flex bg-secondary">
+                        <div class="p-2 bg-info order-3">You think I should be first</div>
+                        <div class="p-2 bg-warning order-1">He isnt first though</div>
+                        <div class="p-2 bg-primary order-2">We have all been shuffled</div>
+                    </div>
+                    <div class="d-inline-flex bg-secondary">
+                        <div class="p-2 bg-info">Flex item 1</div>
+                        <div class="p-2 bg-warning">Flex item 2</div>
+                        <div class="p-2 bg-primary">Flex item 3</div>
+                    </div>
+                    <div class="d-flex flex column">
+                        <div class="p-2 bg-danger">Top</div>
+                        <div class="p-2 bg-secondary">Middle</div>
+                        <div class="p-2 bg-danger">Bottom</div>
+                    </div>
+                    <div class="d-flex bg-secondary">
+                        <div class="p-2 bg-info mr-auto">Alone</div>
+                        <div class="p-2 bg-warning">Right</div>
+                        <div class="p-2 bg-primary">Right</div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="sec3">
+                    <p class="text-center">
+                        <a href="https://giphy.com/explore/orb" class="btn btn-info" role="button"> floaty man </a>
+                    </p>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

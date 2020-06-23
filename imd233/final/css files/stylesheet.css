@@ -1,0 +1,181 @@
+.aidans-section{
+    background-color: #4285f4;
+    background-image: repeating-linear-gradient(#4285f4, #00a4ef, #4285f4);
+    border-radius: 15px;
+    font-family: customFont1;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+} 
+.aidans-section p{
+    font-family: customFont1;
+}
+.homepage-grid {
+    background-color: hsl(221, 44%, 41%); 
+    color: white;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url(custom-fonts/Komika/KOMTXKBI.ttf)
+}
+@font-face {
+    font-family: customFont2;
+    src: url(custom-fonts/FINALOLD.TTF)
+}
+
+#loader {
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    border-bottom: 5px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.homepage {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+.aidans-table {
+    border-radius: 15px;
+    background-color: #00a4ef;
+    color: white;
+    padding: 20px;
+    width: 20px;
+    height: 150px;  
+}
+
+
+.grad1 {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#42A5F5,#1E88E5,#42A5F5); /* Standard syntax (must be last) */
+}
+.dhruvs-section {
+    font-size: large;
+}
+.dhruvs-section h1 {
+    color: white;
+    text-align: center;
+}
+.dhruvs-section ol {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dhruvs-section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+.dhruvs-section h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+.dhruvs-section li {
+    text-overflow: initial;
+}
+/*The following is all for a dropdown button in Dhruv's section, adapted from W3schools*/
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+  /* Dropdown Content (Hidden by Default) */
+  .dhruv-dropcontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dhruv-dropcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dhruv-dropcontent a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dhruv-dropcontent container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+
+/*Connors section starts below*/
+.backtemp{ 
+    background-color: firebrick;
+    border-radius: 10px;
+    font-weight: bolder;
+    white-space: pre;
+}
+
+h5 {
+    font-size: xx-small;
+}
+h5:hover{
+    color: cornflowerblue;
+}
+h5:active{
+    color: darkgreen;
+}
+
+#change1 {
+    text-indent: 20px;
+    color: chartreuse;
+}
+
+.imageRotate{
+    width:20px;
+    height:20px;
+    transform:rotate(35deg);
+}
+
